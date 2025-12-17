@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Physical AI & Robotics',
   tagline: 'A Comprehensive Guide to Physical AI, Robotics, Humanoid Robots, and Embodied AI Systems',
-  favicon: require.resolve('img/favicon.ico'),
+  favicon: require.resolve('./img/favicon.ico'), // fixed path
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -34,7 +34,7 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.ts'),
+          sidebarPath: require.resolve('./sidebars.ts'), // fixed path
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -51,14 +51,14 @@ const config: Config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.css'), // fixed path
         },
-      },
+      } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
-    image: require.resolve('img/docusaurus-social-card.jpg'),
+    image: require.resolve('./img/docusaurus-social-card.jpg'), // fixed path
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -66,7 +66,7 @@ const config: Config = {
       title: 'Physical AI & Robotics',
       logo: {
         alt: 'My Site Logo',
-        src: require.resolve('img/logo.svg'),
+        src: require.resolve('./img/logo.svg'), // fixed path
       },
       items: [
         {
@@ -119,7 +119,7 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-  },
+  } satisfies Preset.ThemeConfig,
 };
 
 export default config;
