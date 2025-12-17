@@ -7,18 +7,19 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Physical AI & Robotics',
   tagline: 'A Comprehensive Guide to Physical AI, Robotics, Humanoid Robots, and Embodied AI Systems',
-  favicon: require.resolve('./img/favicon.ico'), // fixed path
+  
+  // Use require.resolve to ensure Vercel finds the files
+  favicon: require.resolve('./img/favicon.ico'),
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+  // Future flags
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Production URL of your site
+  // Production URL and base path
   url: 'https://face-one-book-of-ai-pc7j.vercel.app',
   baseUrl: '/',
 
-  // GitHub pages deployment config
   organizationName: 'facebook',
   projectName: 'docusaurus',
 
@@ -34,7 +35,7 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.ts'), // fixed path
+          sidebarPath: require.resolve('./sidebars.ts'),
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -51,14 +52,15 @@ const config: Config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'), // fixed path
+          customCss: require.resolve('./src/css/custom.css'),
         },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
-    image: require.resolve('./img/docusaurus-social-card.jpg'), // fixed path
+    // Social card image
+    image: require.resolve('./img/docusaurus-social-card.jpg'),
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -66,7 +68,7 @@ const config: Config = {
       title: 'Physical AI & Robotics',
       logo: {
         alt: 'My Site Logo',
-        src: require.resolve('./img/logo.svg'), // fixed path
+        src: require.resolve('./img/logo.svg'),
       },
       items: [
         {
