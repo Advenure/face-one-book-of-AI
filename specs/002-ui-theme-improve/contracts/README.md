@@ -1,0 +1,1 @@
+# API Contracts\n\nThis feature is purely a UI/UX styling enhancement and does not involve any API contracts, external or internal. Therefore, no API definitions are present here.

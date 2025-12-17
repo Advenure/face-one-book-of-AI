@@ -1,0 +1,1 @@
+# API Contracts\n\nThis feature does not involve explicit API contracts as it focuses on building a static Docusaurus documentation site with content generation constraints. Therefore, no API definitions are present here.

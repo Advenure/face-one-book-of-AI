@@ -1,0 +1,1 @@
+# API Contracts\n\nThis feature does not involve explicit API contracts, as content generation is handled internally by the agent and directly populates Markdown files. There are no external API endpoints to define.
