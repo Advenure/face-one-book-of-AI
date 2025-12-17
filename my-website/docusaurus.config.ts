@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Production URL of your site
-  url: 'https://face-one-book-of-ai.vercel.app',
+  url: 'https://face-one-book-of-ai-pc7j.vercel.app',
   baseUrl: '/',
 
   // GitHub pages deployment config
